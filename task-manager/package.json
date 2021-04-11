@@ -1,20 +1,17 @@
 {
   "type": "module",
-  "name": "web-server",
+  "name": "task-manager",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js -e js,hbs"
+    "dev": "nodemon app.js -e js,hbs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "postman-request": "^2.88.1-postman.30"
+    "mongodb": "^3.6.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
