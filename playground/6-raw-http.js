@@ -1,7 +1,7 @@
-const http = require('http')
-const url = 'http://api.weatherstack.com/current?access_key=e84129bc20b99e3b1452c36379b4e3ff&query=40,-75&units=f'
+const https = require('https')
+const url = 'https://api.darksky.net/forecast/9d1465c6f3bb7a6c71944bdd8548d026/40,-75'
 
-const request = http.request(url, (response) => {
+const request = https.request(url, (response) => {
     let data = ''
 
     response.on('data', (chunk) => {
